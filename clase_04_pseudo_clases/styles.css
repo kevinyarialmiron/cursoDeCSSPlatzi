@@ -1,0 +1,32 @@
+input:focus {
+    outline: 2px solid blue;
+    background-color: rgb(207, 232, 240);
+}
+
+li:first-child {
+    color: green;
+    font-weight: bold;
+}
+
+li:last-child {
+    color: red;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(145, 145, 145);
+}
+
+.quote::after {
+    content: '"';
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quote::before {
+    content: '"';
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
