@@ -1,0 +1,38 @@
+.container {
+    border: 1px solid #333;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.box {
+    border: 1px solid #ff0000;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #ffffff;
+}
+
+.box-px {
+    width: 200px;
+}
+
+.box-percent {
+    width: 50%;
+}
+
+.box-rem {
+    width: 15rem;
+}
+
+
+.box-em{
+    font-size: 20px;
+    width: 1em;
+}
+
+.box-vw{
+    width: 30vw;
+}
+
+.box-vh{
+    height: 20vh;
+}
