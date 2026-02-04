@@ -108,7 +108,8 @@ ul {
 
 .header__name {
   color: #1a1a1a;
-  margin-bottom: 8px;
+  margin-bottom: 8px;    
+  margin-top: 20px;
 }
 
 .header__tagline {
@@ -120,7 +121,16 @@ ul {
      6. NAVEGACIÓN
      =========================================== */
 .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #5575df;
+  width: 80vw;
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
 }
 
 .nav__list {
@@ -133,10 +143,10 @@ ul {
 }
 
 .nav__link {
+  font-weight: bold;
   padding: 8px 12px;
   display: inline-block;
-  color: #333333;
-  font-weight: 500;
+  color: #ffffff;
 }
 
 .nav__link:hover {
@@ -145,7 +155,7 @@ ul {
 }
 
 .nav__link--active {
-  color: #2563eb;
+  color: #ffffff;
   font-weight: bold;
 }
 
