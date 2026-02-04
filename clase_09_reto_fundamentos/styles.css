@@ -34,7 +34,6 @@ h1 {
 
 h2 {
   font-size: 38px;
-  margin-top: 48px;
 }
 
 h3 {
@@ -127,7 +126,7 @@ ul {
   text-align: center;
   border: 1px solid black;
   border-radius: 10px;
-  background-color: #5575df;
+  background-color: #2563eb;
   width: 80vw;
   max-width: 1200px;
   margin: 0 auto 20px auto;
@@ -220,13 +219,29 @@ ul {
   text-align: center;
 }
 
-.stat__number {
+.stat__number__green {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  color: #46eb25;
+  margin-bottom: 8px;
+}
+
+.stat__number__blue{
   display: block;
   font-size: 32px;
   font-weight: bold;
   color: #2563eb;
   margin-bottom: 8px;
 }
+.stat__number__purple {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  color: #bf01c5;
+  margin-bottom: 8px;
+}
+
 
 .stat__label {
   font-size: 14px;
@@ -244,6 +259,7 @@ ul {
   font-weight: 600;
   text-align: center;
   border: 2px solid transparent;
+  border-radius: 25px;
   cursor: pointer;
   text-decoration: none;
 }
@@ -255,7 +271,7 @@ ul {
 }
 
 .button--primary:hover {
-  background-color: #1d4ed8;
+  background-color: #83f1ff;
   border-color: #1d4ed8;
   text-decoration: none;
 }
@@ -267,7 +283,8 @@ ul {
 }
 
 .button--secondary:hover {
-  background-color: #f0f4ff;
+  background-color: #be5dff;
+  color: white;
   text-decoration: none;
 }
 
