@@ -319,6 +319,7 @@ ul {
 }
 
 .about__text {
+  text-align: center ;
   color: #666666;
   margin-bottom: 32px;
 }
@@ -364,6 +365,8 @@ ul {
 }
 
 .values__item {
+  display: flex;
+  flex-direction: column;
   padding: 16px;
   margin-bottom: 16px;
   background-color: #f8f9fa;
