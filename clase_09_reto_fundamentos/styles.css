@@ -29,6 +29,7 @@ h4 {
 }
 
 h1 {
+  font-family: "Playfair Display", serif; /*fuente agregada*/
   font-size: 52px;
 }
 
@@ -42,11 +43,14 @@ h3 {
 }
 
 h4 {
+  font-family: "Bebas Neue", sans-serif; /*fuente agregada*/
+  font-weight: lighter;
   font-size: 18px;
   margin-top: 24px;
 }
 
 p {
+  font-family: "Playwrite NZ Basic", cursive;
   margin-bottom: 16px;
 }
 
@@ -54,7 +58,9 @@ strong {
   font-weight: bold;
   color: #000000;
 }
-
+span{
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
 /* ===========================================
      3. ENLACES
      =========================================== */
@@ -634,11 +640,12 @@ ul {
 
 .contact__methods {
   margin-bottom: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .contact__method {
-  display: inline-block;
-  margin: 0 32px 32px;
   text-align: center;
 }
 
