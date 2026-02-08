@@ -580,7 +580,6 @@ ul {
 }
 
 .skill__progress {
-  background-color: #2563eb;
   height: 100%;
   position: absolute;
   top: 0;
@@ -588,14 +587,17 @@ ul {
 }
 
 .skill__progress--html {
+  background: linear-gradient(to right, #ffffff, #ffcb2e, #ff6320);
   width: 55%;
 }
 
 .skill__progress--css {
+  background: linear-gradient(to right, #ffffff, #0d00ff);
   width: 40%;
 }
 
 .skill__progress--js {
+  background: linear-gradient(to right, #ffffff, #f7ff05);
   width: 10%;
 }
 
