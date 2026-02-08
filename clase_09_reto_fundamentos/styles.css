@@ -71,7 +71,8 @@ a {
 
 a:hover {
   color: white;
-  text-decoration: underline;
+  text-shadow: 2px 2px 2px #888;
+
 }
 
 a:active {
@@ -493,12 +494,13 @@ ul {
 
 .tag {
   display: inline-block;
-  background-color: #e0f2fe;
+  background-color: #aaddff;
   color: #0369a1;
   padding: 4px 12px;
   margin-right: 8px;
   font-size: 14px;
   font-weight: 600;
+  border-radius: 15px;
 }
 
 .tag_yellow {
@@ -509,7 +511,19 @@ ul {
   margin-right: 8px;
   font-size: 14px;
   font-weight: 600;
+  border-radius: 15px;
 }
+
+.tag:hover {
+  color: #ffffff;
+}
+
+.tag_yellow:hover {
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #888;
+
+}
+
 
 
 .project__links {
