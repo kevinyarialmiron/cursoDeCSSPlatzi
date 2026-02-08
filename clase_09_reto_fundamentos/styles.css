@@ -89,7 +89,7 @@ ul {
      5. HEADER
      =========================================== */
 .header {
-  background-color: #f8f9fa;
+  background: radial-gradient(circle, #667eea 0%, #764ba2 100%);
   border-bottom: 1px solid #e0e0e0;
   padding: 24px 0;
 }
@@ -118,7 +118,7 @@ ul {
 }
 
 .header__tagline {
-  color: #666666;
+  color: #fffdfd;
   font-size: 14px;
 }
 
@@ -130,9 +130,8 @@ ul {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 1px solid black;
   border-radius: 10px;
-  background-color: #2563eb;
+  background-color:#667eea;
   width: 80vw;
   max-width: 1200px;
   margin: 0 auto 20px auto;
