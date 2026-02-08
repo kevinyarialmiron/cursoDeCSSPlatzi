@@ -70,7 +70,7 @@ a {
 }
 
 a:hover {
-  color: #1d4ed8;
+  color: white;
   text-decoration: underline;
 }
 
@@ -151,11 +151,13 @@ ul {
   padding: 8px 12px;
   display: inline-block;
   color: #ffffff;
+  text-shadow: 2px 2px 2px #0522b4;
 }
 
 .nav__link:hover {
-  color: #2563eb;
   text-decoration: none;
+  text-shadow: 2px 2px 2px #fdfdfd;
+
 }
 
 .nav__link--active {
