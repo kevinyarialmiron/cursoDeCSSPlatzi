@@ -8,11 +8,11 @@
 }
 
 body {
+  background-color: #decef2;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #333333;
-  background-color: #ffffff;
 }
 
 /* ===========================================
@@ -39,7 +39,6 @@ h2 {
 
 h3 {
   font-size: 24px;
-  margin-top: 32px;
 }
 
 h4 {
@@ -573,7 +572,7 @@ ul {
 }
 
 .skill__bar {
-  background-color: #e0e0e0;
+  background-color: #ffffff;
   height: 24px;
   position: relative;
   margin-bottom: 8px;
@@ -638,7 +637,10 @@ ul {
 }
 
 .contact__container {
+  display: flex;
+  flex-direction: column;
   max-width: 800px;
+
   margin: 0 auto;
   text-align: center;
 }
@@ -656,6 +658,7 @@ ul {
 }
 
 .contact__methods {
+  margin-top: 48px;
   margin-bottom: 48px;
   display: flex;
   flex-wrap: wrap;
@@ -663,7 +666,10 @@ ul {
 }
 
 .contact__method {
+  background: linear-gradient(to bottom right, #0ae666, #2caaff);
   text-align: center;
+  padding: 24px;
+  border-radius: 25px;
 }
 
 .contact__method-title {
