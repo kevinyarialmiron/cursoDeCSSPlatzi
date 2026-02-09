@@ -433,6 +433,10 @@ ul {
      14. PROJECT CARD
      =========================================== */
 .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
   background-color: #ffffff;
   padding: 32px;
   margin-bottom: 32px;
@@ -445,17 +449,18 @@ ul {
 
 .project--featured {
   border: 2px solid #2563eb;
-  position: relative;
+  /*position: relative;*/
 }
 
 .project__badge {
+  text-align: right;
+  width: fit-content;
   background-color: #2563eb;
   color: #ffffff;
   padding: 4px 12px;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
-  display: inline-block;
   margin-bottom: 16px;
 }
 
@@ -576,6 +581,8 @@ ul {
   height: 24px;
   position: relative;
   margin-bottom: 8px;
+  box-shadow: 8px 9px 6px 0px #888;
+
 }
 
 .skill__progress {
