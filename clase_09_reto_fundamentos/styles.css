@@ -8,11 +8,11 @@
 }
 
 body {
+  background-color: #90ccf4;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #333333;
-  background-color: #ffffff;
 }
 
 /* ===========================================
@@ -39,7 +39,6 @@ h2 {
 
 h3 {
   font-size: 24px;
-  margin-top: 32px;
 }
 
 h4 {
@@ -70,8 +69,9 @@ a {
 }
 
 a:hover {
-  color: #1d4ed8;
-  text-decoration: underline;
+  color: white;
+  text-shadow: 2px 2px 2px #888;
+
 }
 
 a:active {
@@ -81,15 +81,18 @@ a:active {
 /* ===========================================
      4. LISTAS
      =========================================== */
-ul {
+ul{
   list-style: none;
 }
 
+ul li:hover{
+ font-weight: bolder; 
+}
 /* ===========================================
      5. HEADER
      =========================================== */
 .header {
-  background-color: #f8f9fa;
+  background: radial-gradient(circle, #667eea 0%, #764ba2 100%);
   border-bottom: 1px solid #e0e0e0;
   padding: 24px 0;
 }
@@ -118,7 +121,7 @@ ul {
 }
 
 .header__tagline {
-  color: #666666;
+  color: #fffdfd;
   font-size: 14px;
 }
 
@@ -130,9 +133,8 @@ ul {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 1px solid black;
   border-radius: 10px;
-  background-color: #2563eb;
+  background-color:#667eea;
   width: 80vw;
   max-width: 1200px;
   margin: 0 auto 20px auto;
@@ -152,11 +154,13 @@ ul {
   padding: 8px 12px;
   display: inline-block;
   color: #ffffff;
+  text-shadow: 2px 2px 2px #0522b4;
 }
 
 .nav__link:hover {
-  color: #2563eb;
   text-decoration: none;
+  text-shadow: 2px 2px 2px #fdfdfd;
+
 }
 
 .nav__link--active {
@@ -179,7 +183,7 @@ ul {
 .hero {
   padding: 64px 0;
   text-align: center;
-  background-color: #f0f4f8;
+  background: linear-gradient(to bottom right, #f5f7fa, #5fa9da);
   margin-bottom: 48px;
 }
 
@@ -277,7 +281,7 @@ ul {
 }
 
 .button--primary:hover {
-  background-color: #83f1ff;
+  background: linear-gradient(to bottom right, #0ae666, #2caaff);
   border-color: #1d4ed8;
   text-decoration: none;
 }
@@ -289,7 +293,7 @@ ul {
 }
 
 .button--secondary:hover {
-  background-color: #be5dff;
+  background: linear-gradient(to bottom right, #a6fff8, #8222ff);
   color: white;
   text-decoration: none;
 }
@@ -334,7 +338,7 @@ ul {
      11. QUOTE
      =========================================== */
 .quote {
-  background-color: #f8f9fa;
+  background: linear-gradient(to right, #ffffff, #80acff);
   padding: 24px;
   margin: 32px 0;
   border-left: 4px solid #2563eb;
@@ -432,6 +436,10 @@ ul {
      14. PROJECT CARD
      =========================================== */
 .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
   background-color: #ffffff;
   padding: 32px;
   margin-bottom: 32px;
@@ -444,17 +452,18 @@ ul {
 
 .project--featured {
   border: 2px solid #2563eb;
-  position: relative;
+  /*position: relative;*/
 }
 
 .project__badge {
+  text-align: right;
+  width: fit-content;
   background-color: #2563eb;
   color: #ffffff;
   padding: 4px 12px;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
-  display: inline-block;
   margin-bottom: 16px;
 }
 
@@ -492,12 +501,13 @@ ul {
 
 .tag {
   display: inline-block;
-  background-color: #e0f2fe;
+  background-color: #aaddff;
   color: #0369a1;
   padding: 4px 12px;
   margin-right: 8px;
   font-size: 14px;
   font-weight: 600;
+  border-radius: 15px;
 }
 
 .tag_yellow {
@@ -508,7 +518,19 @@ ul {
   margin-right: 8px;
   font-size: 14px;
   font-weight: 600;
+  border-radius: 15px;
 }
+
+.tag:hover {
+  color: #ffffff;
+}
+
+.tag_yellow:hover {
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #888;
+
+}
+
 
 
 .project__links {
@@ -558,14 +580,15 @@ ul {
 }
 
 .skill__bar {
-  background-color: #e0e0e0;
+  background-color: #ffffff;
   height: 24px;
   position: relative;
   margin-bottom: 8px;
+  box-shadow: 8px 9px 6px 0px #888;
+
 }
 
 .skill__progress {
-  background-color: #2563eb;
   height: 100%;
   position: absolute;
   top: 0;
@@ -573,14 +596,17 @@ ul {
 }
 
 .skill__progress--html {
+  background: linear-gradient(to right, #ffffff, #ffcb2e, #ff6320);
   width: 55%;
 }
 
 .skill__progress--css {
+  background: linear-gradient(to right, #ffffff, #0d00ff);
   width: 40%;
 }
 
 .skill__progress--js {
+  background: linear-gradient(to right, #ffffff, #f7ff05);
   width: 10%;
 }
 
@@ -621,7 +647,10 @@ ul {
 }
 
 .contact__container {
+  display: flex;
+  flex-direction: column;
   max-width: 800px;
+
   margin: 0 auto;
   text-align: center;
 }
@@ -639,6 +668,7 @@ ul {
 }
 
 .contact__methods {
+  margin-top: 48px;
   margin-bottom: 48px;
   display: flex;
   flex-wrap: wrap;
@@ -646,7 +676,10 @@ ul {
 }
 
 .contact__method {
+  background: linear-gradient(to bottom right, #0ae666, #2caaff);
   text-align: center;
+  padding: 24px;
+  border-radius: 25px;
 }
 
 .contact__method-title {
