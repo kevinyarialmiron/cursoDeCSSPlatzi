@@ -338,7 +338,7 @@ ul li:hover{
      11. QUOTE
      =========================================== */
 .quote {
-  background-color: #f8f9fa;
+  background: linear-gradient(to right, #ffffff, #80acff);
   padding: 24px;
   margin: 32px 0;
   border-left: 4px solid #2563eb;
