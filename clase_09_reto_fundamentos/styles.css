@@ -372,15 +372,19 @@ ul li:hover{
 
 .values__list {
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
 }
 
 .values__item {
   display: flex;
   flex-direction: column;
   padding: 16px;
-  margin-bottom: 16px;
   background-color: #f8f9fa;
   border: 1px solid #e0e0e0;
+  border-radius: 10px;
 }
 
 .values__item:hover {
@@ -408,6 +412,14 @@ ul li:hover{
   padding: 64px 0;
   background-color: #f8f9fa;
 }
+
+.project--featured {
+  border: 2px solid #2563eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 .projects__container {
   max-width: 1200px;
@@ -450,10 +462,6 @@ ul li:hover{
   border-color: #2563eb;
 }
 
-.project--featured {
-  border: 2px solid #2563eb;
-  /*position: relative;*/
-}
 
 .project__badge {
   text-align: right;
