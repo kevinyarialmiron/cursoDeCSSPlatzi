@@ -30,15 +30,15 @@ h4 {
 
 h1 {
   font-family: "Playfair Display", serif; /*fuente agregada*/
-  font-size: 52px;
+  font-size: clamp(2rem, 8vw, 4.5rem);
 }
 
 h2 {
-  font-size: 38px;
+  font-size: clamp(1.5rem, 5vw, 3rem);
 }
 
 h3 {
-  font-size: 24px;
+  font-size: clamp(1.25rem, 3vw, 2rem);
 }
 
 h4 {
@@ -54,6 +54,7 @@ p {
 }
 
 strong {
+  font-size: clamp(1.15rem, 4vw, 2.5rem);
   font-weight: bold;
   color: #000000;
 }
@@ -114,6 +115,22 @@ ul li:hover{
   margin-bottom: 24px;
 }
 
+#fotoDePerfil {
+  width: clamp(80px, 20vw, 180px);
+  height: clamp(80px, 20vw, 180px);
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#fotoDePerfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .header__name {
   color: #1a1a1a;
   margin-bottom: 8px;    
@@ -129,10 +146,6 @@ ul li:hover{
      6. NAVEGACIÓN
      =========================================== */
 .nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   border-radius: 10px;
   background-color:#667eea;
   width: 80vw;
@@ -141,7 +154,18 @@ ul li:hover{
 }
 
 .nav__list {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+@media (min-width: 750px){
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .nav__item {
@@ -194,20 +218,20 @@ ul li:hover{
 }
 
 .hero__title {
-  font-size: 48px;
+  font-size: clamp(1.5rem, 5vw, 3rem);
   color: #1a1a1a;
   margin-bottom: 16px;
 }
 
 .hero__subtitle {
-  font-size: 24px;
+  font-size: clamp(1.125rem, 3vw, 1.5rem);
   color: #2563eb;
   margin-bottom: 24px;
   font-weight: 600;
 }
 
 .hero__description {
-  font-size: 18px;
+  font-size: clamp(1rem, 2vw, 1.125rem);
   color: #666666;
   margin-bottom: 32px;
   max-width: 600px;
@@ -220,13 +244,16 @@ ul li:hover{
 }
 
 .hero__stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem 2rem;
   text-align: center;
 }
 
 .stat {
-  display: inline-block;
-  margin: 0 32px;
   text-align: center;
+  min-width: 5rem;
 }
 
 .stat__number__green {
@@ -373,10 +400,26 @@ ul li:hover{
 .values__list {
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
+  grid-template-columns: 1fr;
+  column-gap: 1.5rem;
   row-gap: 20px;
 }
+
+/* Esto hace que aparezcan más columnas SOLO cuando haya espacio */
+@media (min-width: 600px) {
+  .values__list {
+    grid-template-columns: repeat(2, 1fr);   /* 2 columnas en pantallas medianas */
+  }
+}
+
+@media (min-width: 900px) {
+  .values__list {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    /* aquí ya usa lo que aprendiste: repeat + minmax + auto-fit */
+  }
+}
+
+
 
 .values__item {
   display: flex;
@@ -441,7 +484,22 @@ ul li:hover{
 }
 
 .projects__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
   padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* ===========================================
@@ -679,8 +737,16 @@ ul li:hover{
   margin-top: 48px;
   margin-bottom: 48px;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  flex-direction: column;
+}
+
+@media (min-width: 700px){
+  .contact__methods{
+    flex-direction: row;
+  }
 }
 
 .contact__method {
