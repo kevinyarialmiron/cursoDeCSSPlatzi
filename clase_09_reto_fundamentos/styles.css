@@ -202,20 +202,20 @@ ul li:hover{
 }
 
 .hero__title {
-  font-size: 48px;
+  font-size: clamp(1.5rem, 5vw, 3rem);
   color: #1a1a1a;
   margin-bottom: 16px;
 }
 
 .hero__subtitle {
-  font-size: 24px;
+  font-size: clamp(1.125rem, 3vw, 1.5rem);
   color: #2563eb;
   margin-bottom: 24px;
   font-weight: 600;
 }
 
 .hero__description {
-  font-size: 18px;
+  font-size: clamp(1rem, 2vw, 1.125rem);
   color: #666666;
   margin-bottom: 32px;
   max-width: 600px;
@@ -228,13 +228,16 @@ ul li:hover{
 }
 
 .hero__stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem 2rem;
   text-align: center;
 }
 
 .stat {
-  display: inline-block;
-  margin: 0 32px;
   text-align: center;
+  min-width: 5rem;
 }
 
 .stat__number__green {
