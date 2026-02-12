@@ -115,6 +115,22 @@ ul li:hover{
   margin-bottom: 24px;
 }
 
+#fotoDePerfil {
+  width: clamp(80px, 20vw, 180px);
+  height: clamp(80px, 20vw, 180px);
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#fotoDePerfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .header__name {
   color: #1a1a1a;
   margin-bottom: 8px;    
